@@ -142,7 +142,8 @@ class BulletPhysics(physics.Physics):
                  filename,
                  pose,
                  scale=1.0,
-                 is_static=False):
+                 is_static=False,
+                 **kwargs):
         """Load a body into the simulation.
 
         Args:
@@ -152,6 +153,7 @@ class BulletPhysics(physics.Physics):
                 a tuple of position and orientation.
             scale: The global scaling factor.
             is_static: If set the pose of the base to be fixed.
+            **kwargs: extra arguments intended for loading obj file
 
         Returns:
             body_uid: The unique ID of the body.
