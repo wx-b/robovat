@@ -15,7 +15,7 @@ from robovat.utils.logging import logger
 class FrankaPandaSim(franka_panda.FrankaPanda):
     """FrankaPanda wrapper in simulation."""
 
-    ARM_NAME = 'franka_panda_arm'
+    ARM_NAME = 'franka_panda'
     BASE_NAME = 'franka_panda_base'
 
     def __init__(self,
