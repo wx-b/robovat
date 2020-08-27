@@ -1,15 +1,12 @@
 
-=======
-RoboVat
-=======
+# RoboVat
 
 [About](#about)  
 [Installation](#installation)  
 [Examples](#examples)  
 [Citation](#citation)  
 
-About
-=====
+## About
 
 RoboVat is a tookit for fast development of robotic task environments in simulation and the real world. It provides unified APIs for robot control and perception to bridge the reality gap. Its name is derived from [<em>brain in a vat</em>](https://en.wikipedia.org/wiki/Brain_in_a_vat).
 
@@ -17,8 +14,7 @@ Currently, RoboVat supports [Sawyer](https://www.rethinkrobotics.com/sawyer) rob
 
 <p align="center"><img width="80%" src="docs/push_env.png" /></p>
 
-Installation
-============
+## Installation
 
 1. **Create a virtual environment (recommended)** 
 
@@ -103,8 +99,7 @@ To simulate concave bodies, the OBJ file needs to be processed by convex decompo
 python tools/convert_obj_to_urdf.py --input PATH_TO_OBJ --output OUTPUT_DIR --decompose 1
 ```
 
-Citation
-========
+## Citation
 
 If you find this code useful for your research, please cite:
 ```
@@ -117,8 +112,7 @@ If you find this code useful for your research, please cite:
 ```
 
 
-Generate Docs
-=============
+## Generate Docs
 Go to docs folder, and run
 ```
 sphinx-apidoc -o source/modules ../ ../setup.py -t source/_templates/apidoc/ -f -d 1
