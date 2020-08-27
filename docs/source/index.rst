@@ -8,18 +8,13 @@ Welcome to RPL-robovat's documentation!
 
 .. toctree::
    :maxdepth: 1
-   :caption: README:
+   :caption: Tutorial
 
    readme
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :caption: Environment Reference:
+   :caption: API Reference
 
    modules/modules.rst
-
-Indices and tables
-==================
-
-* :ref:`search`

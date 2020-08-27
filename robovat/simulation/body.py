@@ -20,7 +20,8 @@ class Body(Entity):
                  pose,
                  scale=1.0,
                  is_static=False,
-                 name=None):
+                 name=None,
+                 **kwargs):
         """Initialize.
 
         Args:
@@ -30,13 +31,15 @@ class Body(Entity):
             scale: The scaling factor of the body.
             is_static: If the body is static.
             name: The name of the entity.
+            kwargs: Extra arguments for loading obj files
         """
         Entity.__init__(self, simulator, name)
 
         self._uid = self.physics.add_body(filename,
                                           pose,
                                           scale=scale,
-                                          is_static=is_static)
+                                          is_static=is_static,
+                                          **kwargs)
         self._initial_relative_pose = pose
         self._is_static = is_static
 
