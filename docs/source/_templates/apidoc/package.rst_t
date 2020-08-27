@@ -44,5 +44,4 @@
 {%- endif %}
 
 
-{{ automodule(pkgname, automodule_options) }}
-{% endif %}
+

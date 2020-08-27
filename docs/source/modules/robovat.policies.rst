@@ -35,10 +35,5 @@ robovat.policies.random\_policy module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.policies
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

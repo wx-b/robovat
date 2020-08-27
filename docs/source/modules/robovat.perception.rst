@@ -34,10 +34,5 @@ robovat.perception.point\_cloud\_utils module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.perception
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

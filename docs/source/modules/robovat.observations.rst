@@ -43,10 +43,5 @@ robovat.observations.pose\_obs module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.observations
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

@@ -35,10 +35,5 @@ robovat.envs.grasp.visualize module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.envs.grasp
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

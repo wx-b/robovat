@@ -27,10 +27,5 @@ robovat.reward\_fns.reward\_fn module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.reward_fns
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

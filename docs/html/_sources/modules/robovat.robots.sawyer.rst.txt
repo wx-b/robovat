@@ -27,10 +27,5 @@ robovat.robots.sawyer.sawyer\_sim module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.robots.sawyer
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

@@ -19,10 +19,5 @@ robovat.perception.camera.kinect2 module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.perception.camera
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

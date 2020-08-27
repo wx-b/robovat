@@ -43,10 +43,5 @@ robovat.math.quaternion module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.math
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

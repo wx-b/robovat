@@ -27,10 +27,5 @@ robovat.io.pickle\_utils module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.io
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

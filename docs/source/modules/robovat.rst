@@ -17,10 +17,5 @@ robovat package
    robovat.simulation
    robovat.utils
 
-Module contents
----------------
 
-.. automodule:: robovat
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

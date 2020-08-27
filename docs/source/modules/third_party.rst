@@ -11,10 +11,5 @@ third\_party.transformations module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: third_party
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

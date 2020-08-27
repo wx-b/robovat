@@ -11,10 +11,5 @@ robovat.simulation.camera.bullet\_camera module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.simulation.camera
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

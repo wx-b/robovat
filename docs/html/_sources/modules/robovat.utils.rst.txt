@@ -19,6 +19,14 @@ robovat.utils.mesh\_utils module
    :undoc-members:
    :show-inheritance:
 
+robovat.utils.planning\_utils module
+------------------------------------
+
+.. automodule:: robovat.utils.planning_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 robovat.utils.string\_utils module
 ----------------------------------
 
@@ -43,10 +51,5 @@ robovat.utils.yaml\_config module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.utils
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

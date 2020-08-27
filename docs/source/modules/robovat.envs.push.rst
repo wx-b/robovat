@@ -27,10 +27,5 @@ robovat.envs.push.push\_env module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.envs.push
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

@@ -27,10 +27,5 @@ robovat.envs.robot\_env module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.envs
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

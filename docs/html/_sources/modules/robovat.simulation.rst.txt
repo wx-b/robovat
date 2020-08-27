@@ -83,10 +83,5 @@ robovat.simulation.simulator module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.simulation
-   :members:
-   :undoc-members:
-   :show-inheritance:
+

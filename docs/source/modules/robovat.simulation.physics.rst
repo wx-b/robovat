@@ -19,10 +19,5 @@ robovat.simulation.physics.physics module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
 
-.. automodule:: robovat.simulation.physics
-   :members:
-   :undoc-members:
-   :show-inheritance:
+
