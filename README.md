@@ -80,6 +80,13 @@ Currently, RoboVat supports [Sawyer](https://www.rethinkrobotics.com/sawyer) rob
     ```
 
     And now you have urdf files for YCB objects in the simulation.
+    
+5. Download assets for franka panda (Temporary solution):
+   For now, in order to add franka panda model to assets, you need to
+   download the link
+   `https://drive.google.com/file/d/1HoHO7LqvF1Iixz7Y1t6u5aLOn6CnR79u/view?usp=sharing`
+   and then unzip the file and put everything under `assets/robots/franka_panda`.
+   
 
 ## Examples
 
