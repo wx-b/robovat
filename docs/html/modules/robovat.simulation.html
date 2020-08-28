@@ -164,7 +164,7 @@
 <li class="toctree-l3"><a class="reference internal" href="robovat.utils.html">robovat.utils package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.logging">robovat.utils.logging module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.mesh_utils">robovat.utils.mesh_utils module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.planning_utils">robovat.utils.planning_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#robovat-utils-planning-utils-module">robovat.utils.planning_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.string_utils">robovat.utils.string_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.time_utils">robovat.utils.time_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.yaml_config">robovat.utils.yaml_config module</a></li>
@@ -448,7 +448,7 @@
 
 <dl class="py method">
 <dt id="robovat.simulation.body.Body.set_dynamics">
-<code class="sig-name descname">set_dynamics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mass</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">lateral_friction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rolling_friction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">spinning_friction</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/simulation/body.html#Body.set_dynamics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.simulation.body.Body.set_dynamics" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_dynamics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mass</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">lateral_friction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rolling_friction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">spinning_friction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">contact_damping</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">contact_stiffness</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/simulation/body.html#Body.set_dynamics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.simulation.body.Body.set_dynamics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set dynmamics.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -457,6 +457,8 @@
 <li><p><strong>lateral_friction</strong> – The lateral friction coefficient.</p></li>
 <li><p><strong>rolling_friction</strong> – The rolling friction coefficient.</p></li>
 <li><p><strong>spinning_friction</strong> – The spinning friction coefficient.</p></li>
+<li><p><strong>contact_damping</strong> – The contact damping coefficient.</p></li>
+<li><p><strong>contact_stiffness</strong> – The contact stiffness coefficient</p></li>
 </ul>
 </dd>
 </dl>

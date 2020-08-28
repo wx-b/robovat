@@ -162,7 +162,7 @@
 <li class="toctree-l3"><a class="reference internal" href="modules/robovat.utils.html">robovat.utils package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.logging">robovat.utils.logging module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.mesh_utils">robovat.utils.mesh_utils module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.planning_utils">robovat.utils.planning_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#robovat-utils-planning-utils-module">robovat.utils.planning_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.string_utils">robovat.utils.string_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.time_utils">robovat.utils.time_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="modules/robovat.utils.html#module-robovat.utils.yaml_config">robovat.utils.yaml_config module</a></li>
@@ -516,6 +516,8 @@
       <li><a href="modules/robovat.policies.html#robovat.policies.grasp_policy.AntipodalGrasp4DofPolicy.default_config">default_config() (AntipodalGrasp4DofPolicy property)</a>
 
       <ul>
+        <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.default_config">(FrankaPandaGraspEnv property)</a>
+</li>
         <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.grasp_4dof_env.Grasp4DofEnv.default_config">(Grasp4DofEnv property)</a>
 </li>
         <li><a href="modules/robovat.policies.html#robovat.policies.policy.Policy.default_config">(Policy property)</a>
@@ -525,10 +527,10 @@
         <li><a href="modules/robovat.envs.html#robovat.envs.robot_env.RobotEnv.default_config">(RobotEnv property)</a>
 </li>
       </ul></li>
-      <li><a href="modules/robovat.perception.camera.html#robovat.perception.camera.camera.Camera.deproject_depth_image">deproject_depth_image() (Camera method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/robovat.perception.camera.html#robovat.perception.camera.camera.Camera.deproject_depth_image">deproject_depth_image() (Camera method)</a>
+</li>
       <li><a href="modules/robovat.perception.camera.html#robovat.perception.camera.camera.Camera.deproject_pixel">deproject_pixel() (Camera method)</a>
 </li>
       <li><a href="modules/robovat.envs.html#robovat.envs.robot_env.RobotEnv.done">done() (RobotEnv property)</a>
@@ -577,8 +579,6 @@
 </li>
       <li><a href="modules/robovat.math.html#robovat.math.euler.Euler">Euler (class in robovat.math.euler)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/robovat.simulation.html#robovat.simulation.entity.Entity.euler">euler() (Entity property)</a>
 
       <ul>
@@ -593,11 +593,19 @@
         <li><a href="modules/robovat.robots.html#robovat.robots.robot.Robot.euler">(Robot property)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/third_party.html#third_party.transformations.euler_from_matrix3">euler_from_matrix3() (in module third_party.transformations)</a>
 </li>
       <li><a href="modules/third_party.html#third_party.transformations.euler_from_matrix4">euler_from_matrix4() (in module third_party.transformations)</a>
 </li>
       <li><a href="modules/third_party.html#third_party.transformations.euler_from_quaternion">euler_from_quaternion() (in module third_party.transformations)</a>
+</li>
+      <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_gentle_grasping_action">execute_gentle_grasping_action() (FrankaPandaGraspEnv method)</a>
+</li>
+      <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_grasping_action">execute_grasping_action() (FrankaPandaGraspEnv method)</a>
+</li>
+      <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_moving_action">execute_moving_action() (FrankaPandaGraspEnv method)</a>
 </li>
       <li><a href="modules/robovat.simulation.camera.html#robovat.simulation.camera.bullet_camera.extrinsic_to_view_matrix">extrinsic_to_view_matrix() (in module robovat.simulation.camera.bullet_camera)</a>
 </li>
@@ -617,6 +625,8 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/robovat.envs.grasp.html#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv">FrankaPandaGraspEnv (class in robovat.envs.grasp.franka_panda_grasp_env)</a>
+</li>
       <li><a href="modules/robovat.robots.franka_panda.html#robovat.robots.franka_panda.franka_panda_real.FrankaPandaReal">FrankaPandaReal (class in robovat.robots.franka_panda.franka_panda_real)</a>
 </li>
       <li><a href="modules/robovat.robots.franka_panda.html#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim">FrankaPandaSim (class in robovat.robots.franka_panda.franka_panda_sim)</a>
@@ -1133,6 +1143,8 @@
       <ul>
         <li><a href="modules/robovat.envs.html#module-robovat.envs.arm_env">robovat.envs.arm_env</a>
 </li>
+        <li><a href="modules/robovat.envs.grasp.html#module-robovat.envs.grasp.franka_panda_grasp_env">robovat.envs.grasp.franka_panda_grasp_env</a>
+</li>
         <li><a href="modules/robovat.envs.grasp.html#module-robovat.envs.grasp.grasp_2d">robovat.envs.grasp.grasp_2d</a>
 </li>
         <li><a href="modules/robovat.envs.grasp.html#module-robovat.envs.grasp.grasp_4dof_env">robovat.envs.grasp.grasp_4dof_env</a>
@@ -1242,8 +1254,6 @@
         <li><a href="modules/robovat.utils.html#module-robovat.utils.logging">robovat.utils.logging</a>
 </li>
         <li><a href="modules/robovat.utils.html#module-robovat.utils.mesh_utils">robovat.utils.mesh_utils</a>
-</li>
-        <li><a href="modules/robovat.utils.html#module-robovat.utils.planning_utils">robovat.utils.planning_utils</a>
 </li>
         <li><a href="modules/robovat.utils.html#module-robovat.utils.string_utils">robovat.utils.string_utils</a>
 </li>
@@ -1698,6 +1708,13 @@
 </li>
       </ul></li>
       <li>
+    robovat.envs.grasp.franka_panda_grasp_env
+
+      <ul>
+        <li><a href="modules/robovat.envs.grasp.html#module-robovat.envs.grasp.franka_panda_grasp_env">module</a>
+</li>
+      </ul></li>
+      <li>
     robovat.envs.grasp.grasp_2d
 
       <ul>
@@ -1809,6 +1826,8 @@
         <li><a href="modules/robovat.math.html#module-robovat.math.quaternion">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     robovat.observations.action_obs
 
@@ -1816,8 +1835,6 @@
         <li><a href="modules/robovat.observations.html#module-robovat.observations.action_obs">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     robovat.observations.attribute_obs
 
@@ -2085,13 +2102,6 @@
 </li>
       </ul></li>
       <li>
-    robovat.utils.planning_utils
-
-      <ul>
-        <li><a href="modules/robovat.utils.html#module-robovat.utils.planning_utils">module</a>
-</li>
-      </ul></li>
-      <li>
     robovat.utils.string_utils
 
       <ul>
@@ -2210,10 +2220,10 @@
 </li>
       <li><a href="modules/robovat.robots.html#robovat.robots.robot_command.RobotCommand.SET_MAX_JOINT_VELOCITIES">SET_MAX_JOINT_VELOCITIES (RobotCommand attribute)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/robovat.simulation.html#robovat.simulation.controllable_body.ControllableBody.set_max_joint_velocities">set_max_joint_velocities() (ControllableBody method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/robovat.simulation.html#robovat.simulation.controllable_body.ControllableBody.set_max_reaction_force">set_max_reaction_force() (ControllableBody method)</a>
 </li>
       <li><a href="modules/robovat.simulation.html#robovat.simulation.controllable_body.ControllableBody.set_neutral_joint_positions">set_neutral_joint_positions() (ControllableBody method)</a>
@@ -2286,6 +2296,10 @@
         <li><a href="modules/robovat.perception.camera.html#robovat.perception.camera.kinect2.Kinect2.stop">(Kinect2 method)</a>
 </li>
       </ul></li>
+      <li><a href="modules/robovat.robots.franka_panda.html#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_l_finger">stop_l_finger() (FrankaPandaSim method)</a>
+</li>
+      <li><a href="modules/robovat.robots.franka_panda.html#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_r_finger">stop_r_finger() (FrankaPandaSim method)</a>
+</li>
       <li><a href="modules/robovat.simulation.html#robovat.simulation.controllable_body.JointTarget.stop_time">stop_time() (JointTarget property)</a>
 
       <ul>

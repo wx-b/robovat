@@ -54,9 +54,32 @@ Currently, RoboVat supports [Sawyer](https://www.rethinkrobotics.com/sawyer) rob
 	unzip assets.zip
 	unzip configs.zip
 	```
-
+    
+    Notice that because we have some new features addition to the
+    original robovat repo, you need to make some efforts to merge the
+    everything together under assets folder and configs folder respectively.
+    
 	If the assets folder is not in the root directory, remember to specify the 
 	argument `--assets PATH_TO_ASSETS` when executing the example scripts.
+
+4. **Download all YCB objects and generate their urdfs**
+
+    Here we have two scripts for you to obtain urdf of YCB
+    objects. The original robovat contains simplified and limited
+    number of YCB objects. You can obtain more varieties following the
+    process:
+    ```bash
+        python ycb_downloader.py
+    ```
+    
+    Then you need to export downloaded files into urdf files for easy
+    use. The default path for dowload is `assets/sim/ycb`, and then
+    you will need to run the following command:
+    ```bash
+        python tools/export_ycb_urdf.py --input "assets/sim/ycb/*/google_16k/textured.obj" --rgba "1 1 1 1"
+    ```
+
+    And now you have urdf files for YCB objects in the simulation.
 
 ## Examples
 

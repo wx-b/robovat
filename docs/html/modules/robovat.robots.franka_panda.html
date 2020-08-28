@@ -164,7 +164,7 @@
 <li class="toctree-l3"><a class="reference internal" href="robovat.utils.html">robovat.utils package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.logging">robovat.utils.logging module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.mesh_utils">robovat.utils.mesh_utils module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.planning_utils">robovat.utils.planning_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#robovat-utils-planning-utils-module">robovat.utils.planning_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.string_utils">robovat.utils.string_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.time_utils">robovat.utils.time_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.yaml_config">robovat.utils.yaml_config module</a></li>
@@ -511,7 +511,7 @@ joint_name:joint_position.</p>
 <p>FrankaPanda wrapper in simulation.</p>
 <dl class="py attribute">
 <dt id="robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.ARM_NAME">
-<code class="sig-name descname">ARM_NAME</code><em class="property"> = 'franka_panda_arm'</em><a class="headerlink" href="#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.ARM_NAME" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">ARM_NAME</code><em class="property"> = 'franka_panda'</em><a class="headerlink" href="#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.ARM_NAME" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -619,6 +619,28 @@ joint_name:joint_position.</p>
 <dt id="robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.reset">
 <code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">positions</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/robots/franka_panda/franka_panda_sim.html#FrankaPandaSim.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset the robot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_l_finger">
+<code class="sig-name descname">stop_l_finger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offset</span><span class="o">=</span><span class="default_value">0.005</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/robots/franka_panda/franka_panda_sim.html#FrankaPandaSim.stop_l_finger"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_l_finger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop l finger if it touches the object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>offset</strong> (<em>float</em><em>, </em><em>optional</em>) – offset for the finger to move, mainly for ensuring more stable grasps</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_r_finger">
+<code class="sig-name descname">stop_r_finger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offset</span><span class="o">=</span><span class="default_value">0.005</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/robots/franka_panda/franka_panda_sim.html#FrankaPandaSim.stop_r_finger"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.robots.franka_panda.franka_panda_sim.FrankaPandaSim.stop_r_finger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop r finger if it touches the object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>offset</strong> (<em>float</em><em>, </em><em>optional</em>) – offset for the finger to move, mainly for ensuring more stable grasps</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>

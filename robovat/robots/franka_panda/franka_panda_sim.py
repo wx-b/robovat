@@ -36,6 +36,7 @@ class FrankaPandaSim(franka_panda.FrankaPanda):
         self._simulator = simulator
 
         self._arm_pose = Pose(pose)
+        # self._base_pose = Pose([[0.35, 0.73, -0.8], [0, 0, 0]])
 
         self._arm = None
         self._base = None
@@ -360,7 +361,7 @@ class FrankaPandaSim(franka_panda.FrankaPanda):
 
         l_finger_position = (self._l_finger_joint.upper_limit -
                              value * self._l_finger_joint.range)
-        r_finger_position = (self._r_finger_joint.lower_limit +
+        r_finger_position = (self._r_finger_joint.upper_limit -
                              value * self._r_finger_joint.range)
 
         joint_positions = {
@@ -382,6 +383,55 @@ class FrankaPandaSim(franka_panda.FrankaPanda):
         self._send_robot_command(robot_command)
         self._gripper_ready_time = self._arm.physics.time() + 0.5
 
+    def stop_l_finger(self, offset=0.005):
+        """Stop l finger if it touches the object
+
+        Args:
+           offset(float, optional): offset for the finger to move, mainly for ensuring more stable grasps
+        """
+        l_finger_position = self._l_finger_joint.position - offset
+
+        joint_positions = {
+            self._l_finger_joint.name: l_finger_position,
+        }
+
+        kwargs = {
+            'joint_positions': joint_positions,
+            'timeout': 10000,
+        }
+
+        robot_command = RobotCommand(
+            component=self._arm.name,
+            command_type='set_target_joint_positions',
+            arguments=kwargs)
+
+        self._send_robot_command(robot_command)
+
+    def stop_r_finger(self, offset=0.005):
+        """Stop r finger if it touches the object
+
+        Args:
+           offset(float, optional): offset for the finger to move, mainly for ensuring more stable grasps
+        """
+        r_finger_position = self._r_finger_joint.position - offset
+
+        joint_positions = {
+            self._r_finger_joint.name: r_finger_position,
+        }
+
+        kwargs = {
+            'joint_positions': joint_positions,
+            'timeout': 10000,
+        }
+
+        robot_command = RobotCommand(
+            component=self._arm.name,
+            command_type='set_target_joint_positions',
+            arguments=kwargs)
+
+        self._send_robot_command(robot_command)
+
+        
     def is_limb_ready(self):
         """Check if the limb is busy with control commands.
 

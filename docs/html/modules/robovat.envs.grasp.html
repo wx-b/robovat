@@ -164,7 +164,7 @@
 <li class="toctree-l3"><a class="reference internal" href="robovat.utils.html">robovat.utils package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.logging">robovat.utils.logging module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.mesh_utils">robovat.utils.mesh_utils module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.planning_utils">robovat.utils.planning_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#robovat-utils-planning-utils-module">robovat.utils.planning_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.string_utils">robovat.utils.string_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.time_utils">robovat.utils.time_utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="robovat.utils.html#module-robovat.utils.yaml_config">robovat.utils.yaml_config module</a></li>
@@ -255,6 +255,59 @@
   <div class="section" id="robovat-envs-grasp-package">
 <h1>robovat.envs.grasp package<a class="headerlink" href="#robovat-envs-grasp-package" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
+<div class="section" id="module-robovat.envs.grasp.franka_panda_grasp_env">
+<span id="robovat-envs-grasp-franka-panda-grasp-env-module"></span><h2>robovat.envs.grasp.franka_panda_grasp_env module<a class="headerlink" href="#module-robovat.envs.grasp.franka_panda_grasp_env" title="Permalink to this headline">¶</a></h2>
+<p>This is an example environment for grasping given a specific pose. This environment assumes one object in the environment only.</p>
+<dl class="py class">
+<dt id="robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv">
+<em class="property">class </em><code class="sig-name descname">FrankaPandaGraspEnv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">simulator</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">debug</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/envs/grasp/franka_panda_grasp_env.html#FrankaPandaGraspEnv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="robovat.envs.html#robovat.envs.arm_env.ArmEnv" title="robovat.envs.arm_env.ArmEnv"><code class="xref py py-class docutils literal notranslate"><span class="pre">robovat.envs.arm_env.ArmEnv</span></code></a></p>
+<p>An example franka panda grasping environment.</p>
+<dl class="py method">
+<dt id="robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.default_config">
+<em class="property">property </em><code class="sig-name descname">default_config</code><a class="headerlink" href="#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.default_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the default configuration file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_gentle_grasping_action">
+<code class="sig-name descname">execute_gentle_grasping_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_grasp_pose</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/envs/grasp/franka_panda_grasp_env.html#FrankaPandaGraspEnv.execute_gentle_grasping_action"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_gentle_grasping_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a more gentle grasping action given a target grasp pose</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>target_grasp_pose</strong> (<a class="reference internal" href="robovat.math.html#robovat.math.pose.Pose" title="robovat.math.pose.Pose"><em>Pose</em></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_grasping_action">
+<code class="sig-name descname">execute_grasping_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_grasp_pose</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/envs/grasp/franka_panda_grasp_env.html#FrankaPandaGraspEnv.execute_grasping_action"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_grasping_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute the grasping action given a target grasp pose</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>target_grasp_pose</strong> (<a class="reference internal" href="robovat.math.html#robovat.math.pose.Pose" title="robovat.math.pose.Pose"><em>Pose</em></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_moving_action">
+<code class="sig-name descname">execute_moving_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target_pose</span></em>, <em class="sig-param"><span class="n">straight_line</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/robovat/envs/grasp/franka_panda_grasp_env.html#FrankaPandaGraspEnv.execute_moving_action"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#robovat.envs.grasp.franka_panda_grasp_env.FrankaPandaGraspEnv.execute_moving_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute the gripper to move to a target psoe.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_pose</strong> (<a class="reference internal" href="robovat.math.html#robovat.math.pose.Pose" title="robovat.math.pose.Pose"><em>Pose</em></a>) – </p></li>
+<li><p><strong>straight_line</strong> (<em>bool</em><em>, </em><em>optional</em>) – interpolate linearly between start pose and target pose</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
 <div class="section" id="module-robovat.envs.grasp.grasp_2d">
 <span id="robovat-envs-grasp-grasp-2d-module"></span><h2>robovat.envs.grasp.grasp_2d module<a class="headerlink" href="#module-robovat.envs.grasp.grasp_2d" title="Permalink to this headline">¶</a></h2>
 <p>Grasp classes.</p>

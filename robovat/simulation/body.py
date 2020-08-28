@@ -215,6 +215,8 @@ class Body(Entity):
                      lateral_friction=None,
                      rolling_friction=None,
                      spinning_friction=None,
+                     contact_damping=None,
+                     contact_stiffness=None,
                      ):
         """Set dynmamics.
 
@@ -223,6 +225,8 @@ class Body(Entity):
             lateral_friction: The lateral friction coefficient.
             rolling_friction: The rolling friction coefficient.
             spinning_friction: The spinning friction coefficient.
+            contact_damping: The contact damping coefficient.
+            contact_stiffness: The contact stiffness coefficient
         """
         return self.physics.set_body_dynamics(
             self.uid,
@@ -230,6 +234,8 @@ class Body(Entity):
             lateral_friction=lateral_friction,
             rolling_friction=rolling_friction,
             spinning_friction=rolling_friction,
+            contact_damping=contact_damping,
+            contact_stiffness=contact_stiffness,
         )
 
     def set_color(self, rgba=None, specular=None):

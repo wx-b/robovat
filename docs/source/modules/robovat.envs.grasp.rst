@@ -3,6 +3,14 @@ robovat.envs.grasp package
 
 ----------
 
+robovat.envs.grasp.franka\_panda\_grasp\_env module
+---------------------------------------------------
+
+.. automodule:: robovat.envs.grasp.franka_panda_grasp_env
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 robovat.envs.grasp.grasp\_2d module
 -----------------------------------
 
