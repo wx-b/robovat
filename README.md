@@ -2,6 +2,7 @@
 # RoboVat
 
 [About](#about)  
+[Documentation](https://ut-austin-rpl.github.io/robovat/)  
 [Installation](#installation)  
 [Examples](#examples)  
 [Citation](#citation)  
