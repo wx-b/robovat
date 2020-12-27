@@ -18,7 +18,6 @@ from robovat.math import Pose
 from robovat.math import get_transform
 from robovat.observations import camera_obs
 from robovat.reward_fns.grasp_reward import GraspReward
-from robovat.robots import sawyer
 from robovat.utils.logging import logger
 from robovat.utils.yaml_config import YamlConfig
 
@@ -131,7 +130,7 @@ class Grasp4DofEnv(arm_env.ArmEnv):
         return [
             GraspReward(
                 name='grasp_reward',
-                end_effector_name=sawyer.SawyerSim.ARM_NAME,
+                end_effector_name=self.config.SIM.ARM.ARM_NAME,
                 graspable_name=GRASPABLE_NAME)
         ]
 
